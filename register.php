@@ -9,7 +9,7 @@ $db = $database->getConnection();
  
 $user = new User($db);
  
-// set user property values
+
 $user->username = $_POST['username'];
 $user->password = base64_encode($_POST['password']);
 $user->created = date('Y-m-d H:i:s');
